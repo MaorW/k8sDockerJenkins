@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: ak8s-client-pod
+  labels:
+    component: ak8s
+spec:
+  containers:
+    - name: ak8s-client
+      image: learningmw1991/simple_react_js_project:01
+      ports:
+        - containerPort: 3000
