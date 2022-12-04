@@ -18,19 +18,10 @@ pipeline{
             }
         }
         stage('Build') {
-            agent {
-                docker {
-                    image 'node:16.13.1-alpine'
-                    reuseNode true // No new workspace will be created, and current workspace from current agent will be mounted into container
-                }
-            }
             steps {
-                sh 'node --version'
+                sh 'docker build -t react_node_project ./kub'
             }
              post{
-                always{
-                    sh 'docker rm ${docker ps -aq}'
-                }
                 success{
                     echo "The build has been run successfully ..."
                 }
