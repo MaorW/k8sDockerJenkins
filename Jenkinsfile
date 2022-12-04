@@ -19,7 +19,7 @@ pipeline{
         }
         stage('Build') {
             steps {
-                sh 'docker build -t react_node_project ./kub'
+                sh 'docker build -t learningmw1991/simple_react_js_project:01 ./kub'
             }
              post{
                 success{
