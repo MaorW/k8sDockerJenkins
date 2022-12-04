@@ -9,8 +9,6 @@ And then run:
 ```bash
 npm install
 ```
-And then:
-
 ```bash
 npm start 
 ``` 
