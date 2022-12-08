@@ -23,7 +23,7 @@ And you can browse the demo site
 
 Phase 2: Build docker image that run this site and Upload the image to dockerhub
 
-Phase 3: build ak8s project in minicube that runs this project in 40404 port and browse it 
+Phase 3: build ak8s project in minicube that runs this project in 31131 port and browse it 
 
-Phase 4:  build deployment config file in minicube that runs this project in 40404 port and browse it  with 5 replicas
+Phase 4:  build deployment config file in minicube that runs this project in 31131 port and browse it  with 5 replicas
 
