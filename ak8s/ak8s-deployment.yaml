@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ak8s-client-deployment # 2:24 - 22.11
+spec:
+  replicas: 5
+  selector:
+    matchLabels:
+      component: ak8s
+  template:
+    metadata:
+      name: ak8s-client-pod
+      labels:
+        component: ak8s
+    spec:
+      containers:
+        - name: ak8s-client
+          image: learningmw1991/simple_react_js_project:01
+          ports:
+            - containerPort: 3000
